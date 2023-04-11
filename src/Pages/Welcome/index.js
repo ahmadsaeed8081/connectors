@@ -46,12 +46,11 @@ const Welcome = (props) => {
 
 
 
-    // const NETWORK_ID = "137";
-    // const NETWORK_ID_hex = "0x89";
+    const NETWORK_ID = "137";
+    const NETWORK_ID_hex = "0x89";
 
 
-    const NETWORK_ID = "80001";
-    const NETWORK_ID_hex = "0x13881";
+
 
     if (id == "1") {
       //metmask
@@ -333,14 +332,14 @@ const Welcome = (props) => {
         if (provider.wc.peerMeta.name == "MetaMask") {
           await provider.request({
             method: "wallet_switchEthereumChain",
-            params: [{ chainId: "0x38" }],
+            params: [{ chainId: NETWORK_ID_hex }],
           });
           Connect_Wallet(id);
         } else {
           setOpenWallet(false);
 
           await provider.disconnect();
-          alert("Kindly change your network to Binance");
+          alert("Kindly change your network to Polygon");
         }
       }
     } 

@@ -1,5 +1,5 @@
-export const cont_address="0x06A3B096a06B20b32644E6f71872042eCf22f9C9";
-export const Token_address="0x6dFcB71Fe1e6c2a188fD7dE4F749728a3eCCfdD8";
+export const cont_address="0xF10dEAF3FB61Ad93A535C532FaFc4a10b8be6122";
+export const Token_address="0x51a61EC45a849360580Daaa52b1a30D699D1BB32";
 
 export const cont_abi=[
 	{
